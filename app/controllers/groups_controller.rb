@@ -1,8 +1,7 @@
 class GroupsController < ApplicationController
   def index
-    
     @groups = Group.where(author_id: current_user.id)
-    #@groups = @user.groups.includes(:author)
+    # @groups = @user.groups.includes(:author)
   end
 
   def show
