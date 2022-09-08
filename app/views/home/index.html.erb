@@ -1,1 +1,6 @@
 <h1>Splash Screen</h1>
+<%# <%=image_tag("budget_app.png", class: "logo")%>
+<div class="splash-links">
+    <%=link_to "SIGN UP", new_user_registration_path, class:"splash-sign-up" %>
+    <%=link_to "LOG IN", new_user_session_path, class:"splash-sign-in"%>
+</div>
