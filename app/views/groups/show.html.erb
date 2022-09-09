@@ -1,4 +1,21 @@
-<h1>List of all operations for a givin group</h1>
+<div class="nav">
+  <%= link_to '<', groups_path, class: "back-nav" %>
+  <h2>TRANSACTIONS</h2>
+  <%= button_to 'Log out', destroy_user_session_path, method: :delete, data: {turbo: false}, class: "logout-nav" %>
+</div>
+<div class="center-content">
+  <h4> <%= @group.name %> </h4>
+</div>
+<div class="trans-total flex-row">
+<p>total:</p>
+<p> <%= number_to_currency @group.operations_total_cost %> </p>
+</div>
 <% @operations.each do |operation| %>
-  <%= operation.name %><br>
+  <div class="flex-row op-card">
+    <p> <%= operation.name %> </p>
+    <p> <%= number_to_currency operation.amount %> </p>
+  </div>
 <% end %>
+<div class="center-content">
+  <%= link_to 'New Transaction', new_group_operation_path(group_id: params[:id]), class: "sub-btn new-tans-btn" %>
+</div>
