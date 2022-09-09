@@ -7,8 +7,8 @@ RSpec.describe Group, type: :model do
       @user.password = '123456'
       @user.password_confirmation = '123456'
       @user.save
-      @group = Group.new(name: 'Shopping', icon: "https://cdn-icons-png.flaticon.com/512/189/189715.png",
-        author_id: @user.id)
+      @group = Group.new(name: 'Shopping', icon: 'https://cdn-icons-png.flaticon.com/512/189/189715.png',
+                         author_id: @user.id)
       @group.save
     end
 
