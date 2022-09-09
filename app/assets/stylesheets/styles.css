@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.app-name {
+  text-align: center;
+  color: #3778c2;
+}
+
+.splash-links {
+  text-align: center;
+}
+
+.splash-link {
+  padding: 0.5rem;
+}
+
+.splash-link a:hover {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.splash-link a {
+  text-decoration: none;
+  color: #434b54;
+}
+
+.nav {
+  color: #fff;
+  text-align: center;
+  background-color: #3778c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.nav button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.back-nav {
+  font-size: x-large;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 3px;
+}
+
+.sub-btn-container {
+  text-align: center;
+}
+
+.sub-btn {
+  padding: 0.5rem 1rem;
+  background-color: #3778c2;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+}
+
+.account-links {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.group-card {
+  padding: 1rem;
+}
+
+.group-card a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.group-name {
+  font-weight: bolder;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.new-tans-btn {
+  text-decoration: none;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.op-card {
+  background-color: #f1f3f2;
+  margin-bottom: 0.5rem;
+}
