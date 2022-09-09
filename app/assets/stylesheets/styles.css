@@ -28,11 +28,6 @@ body {
   padding: 0.5rem;
 }
 
-.splash-link a:hover {
-  background-color: #3778c2;
-  color: #fff;
-}
-
 .splash-link a {
   text-decoration: none;
   color: #434b54;
@@ -46,6 +41,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+}
+
+.group-card a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.splash-link a:hover {
+  background-color: #3778c2;
+  color: #fff;
 }
 
 .nav button {
@@ -90,15 +98,6 @@ body {
 
 .group-card {
   padding: 1rem;
-}
-
-.group-card a {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .group-icon {
