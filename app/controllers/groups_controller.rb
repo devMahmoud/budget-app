@@ -24,4 +24,10 @@ class GroupsController < ApplicationController
       redirect_to new_group_path, flash: { error: @group.errors.full_messages }
     end
   end
+
+  private
+
+  def group_params
+    params.require(:group).permit(:user_id, :name, :icon)
+  end
 end
