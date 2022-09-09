@@ -14,9 +14,9 @@ user2.password = "123456"
 user2.password_confirmation = "123456"
 user2.save!
 
-group1 = Group.create(name: "Food", author_id: user1.id)
-group2 = Group.create(name: "Shopping", author_id: user1.id)
-group3 = Group.create(name: "Transportation", author_id: user2.id)
+group1 = Group.create(name: "Food", icon: "https://cdn-icons-png.flaticon.com/512/189/189715.png", author_id: user1.id)
+group2 = Group.create(name: "Shopping", icon: "https://cdn-icons-png.flaticon.com/512/189/189715.png", author_id: user1.id)
+group3 = Group.create(name: "Transportation", icon: "https://cdn-icons-png.flaticon.com/512/189/189715.png", author_id: user2.id)
 
 operation1 = Operation.create(name: "lunch", amount: 30, author_id: user1.id)
 operation2 = Operation.create(name: "ice cream", amount: 5, author_id: user1.id)
