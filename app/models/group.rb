@@ -4,4 +4,9 @@ class Group < ApplicationRecord
   has_many :operations, through: :group_operations
 
   validates :name, presence: true, length: { maximum: 80 }
+  validates :icon, presence: true
+
+  def operations_total_cost
+    operations.sum(:amount)
+  end
 end
