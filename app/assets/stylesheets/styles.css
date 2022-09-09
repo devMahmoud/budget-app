@@ -43,6 +43,12 @@ body {
   padding: 0.5rem;
 }
 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}
+
 .group-card a {
   text-decoration: none;
   color: black;
@@ -60,12 +66,6 @@ body {
   background-color: transparent;
   color: #fff;
   border: none;
-  font-weight: bolder;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #fff;
   font-weight: bolder;
 }
 
