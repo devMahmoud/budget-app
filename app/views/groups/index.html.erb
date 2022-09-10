@@ -1,0 +1,19 @@
+<div class="nav">
+  <div></div>
+  <h2 class="nav-title">CATEGORIES</h2>
+  <%= button_to 'Log out', destroy_user_session_path, method: :delete, data: {turbo: false}, class: "logout-nav" %>
+</div>
+<% @groups.each do |group| %>
+  <div class="group-card">
+    <%=link_to group_path(id: group.id) do%>
+      <img class="group-icon" src=<%= group.icon %> > 
+      <h4> <%= group.name %> </h4>
+      <div>
+        <%= number_to_currency group.operations_total_cost %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+<div class="center-content">
+  <%= link_to 'New Gategory', new_group_path, class: "sub-btn new-tans-btn" %>
+</div>

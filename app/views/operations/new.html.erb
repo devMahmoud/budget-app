@@ -1,0 +1,21 @@
+<div class="nav">
+  <%= link_to '<', group_operations_path, class: "back-nav" %>
+  <h2>NEW TRANSACTIONS</h2>
+  <%= button_to 'Log out', destroy_user_session_path, method: :delete, data: {turbo: false}, class: "logout-nav" %>
+</div>
+
+<%= form_with model: @operation, url: group_operations_path(group_id: params[:group_id]), class: "group-form" do |f| %>
+  <%= render "devise/shared/error_messages", resource: @operation %>
+
+  <div>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Transaction Name", class: "field", required: true %>
+  </div>
+  
+  <div>
+    <%= f.number_field :amount, autofocus: true, autocomplete: "amount", placeholder: "Amount", class: "field", step: :any, required: true %>
+  </div>
+
+  <div class="sub-btn-container">
+    <%= f.submit "Create Transaction", class: "sub-btn" %>
+  </div>
+<% end %>
