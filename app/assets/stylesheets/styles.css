@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -89,6 +90,12 @@ body {
   color: #fff;
   font-weight: bolder;
   border: none;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+  background-image: url("logo300.png");
 }
 
 .account-links {
